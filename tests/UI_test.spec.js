@@ -12,8 +12,6 @@ test('verify that all games in the lobby are clickable', async ({page}) => {
     await page.locator('#iframeId').contentFrame().getByText('Poker').click();
     await page.locator('#iframeId').contentFrame().getByText('Favourites').click();
 
-
-    //await page.pause();
 })
 
 test('user should be able to join a game from the lobby',async ({page}) => {
